@@ -1,0 +1,7 @@
+{
+  "editor.tabSize": 2, // Set tab size to 2 spaces
+  "editor.insertSpaces": true, // Use spaces instead of actual tab characters
+  "editor.detectIndentation": false, // Disable auto-detection to force your settings
+  "editor.trimAutoWhitespace": true, // Automatically trim extra spaces
+  "editor.formatOnSave": true // Automatically format the code when saving
+}

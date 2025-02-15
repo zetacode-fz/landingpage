@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel .control-arrow {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50% !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+.carousel .control-prev.control-arrow {
+  left: 20px !important;
+}
+
+.carousel .control-next.control-arrow {
+  right: 20px !important;
+}
