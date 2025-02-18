@@ -43,10 +43,14 @@ export const SubdomainProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     const loadSubdomainData = async () => {
+      if (import.meta.env.VITE_ENV === "development") {
+        console.log("Running in development mode, skipping subdomain fetch.");
+        setResellerData(DEFAULT_DATA);
+        setIsLoading(false);
+        return;
+      }
+
       try {
-        // setResellerData(DEFAULT_DATA);
-        // setIsLoading(false);
-        // return;
         const hostname = window.location.hostname; // Misalnya: "sub.example.com"
         const parts = hostname.split(".");
 
