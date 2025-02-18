@@ -1,13 +1,14 @@
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import wchat0 from '@/assets/socialproof/whatsapp_chat.png';
-import wchat1 from '@/assets/socialproof/whatsapp_chat-1.png';
-import wchat2 from '@/assets/socialproof/whatsapp_chat-2.png';
-import wchat3 from '@/assets/socialproof/whatsapp_chat-3.png';
-import wchat4 from '@/assets/socialproof/whatsapp_chat-4.png';
-import wchat5 from '@/assets/socialproof/whatsapp_chat-5.png';
-import wchat6 from '@/assets/socialproof/whatsapp_chat-6.png';
+import wchat0 from '@/assets/socialproof/photo_2025-02-18_12-06-50.jpg';
+import wchat1 from '@/assets/socialproof/photo_2025-02-18_12-07-01.jpg';
+import wchat2 from '@/assets/socialproof/photo_2025-02-18_12-07-09.jpg';
+import wchat3 from '@/assets/socialproof/photo_2025-02-18_12-07-17.jpg';
+import wchat4 from '@/assets/socialproof/photo_2025-02-18_12-07-20.jpg';
+import wchat5 from '@/assets/socialproof/photo_2025-02-18_12-07-20.jpg';
+import wchat6 from '@/assets/socialproof/photo_2025-02-18_12-14-56.jpg';
+import wchat7 from '@/assets/socialproof/photo_2025-02-18_12-15-05.jpg';
 
 const ChatTestimonialsSection = () => {
   const chatTestimonials = [
@@ -17,7 +18,8 @@ const ChatTestimonialsSection = () => {
     wchat3,
     wchat4,
     wchat5,
-    wchat6
+    wchat6,
+    wchat7
   ];
 
   return (
@@ -41,7 +43,7 @@ const ChatTestimonialsSection = () => {
                 infiniteLoop={true}
                 centerMode={true}
                 autoPlay={true}
-                centerSlidePercentage={33.33}
+                centerSlidePercentage={100.100}
                 renderArrowPrev={(clickHandler, hasPrev) => {
                   return hasPrev && (
                     <button

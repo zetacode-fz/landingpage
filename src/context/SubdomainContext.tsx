@@ -44,6 +44,9 @@ export const SubdomainProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     const loadSubdomainData = async () => {
       try {
+        // setResellerData(DEFAULT_DATA);
+        // setIsLoading(false);
+        // return;
         const hostname = window.location.hostname; // Misalnya: "sub.example.com"
         const parts = hostname.split(".");
 

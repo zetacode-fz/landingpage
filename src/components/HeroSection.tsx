@@ -1,18 +1,20 @@
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import femmeway from '@/assets/products/femmeway.jpg';
-import beeway from '@/assets/products/beway.jpeg';
-import facialwash from '@/assets/products/facialwash.jpeg';
-import sunscreen from '@/assets/products/sunscreen.jpeg';
+import femmedeo from '@/assets/products/femmedeo.jpg';
+import beeway from '@/assets/products/rashcreamw.jpg';
+import facialwash from '@/assets/products/facialwashw.jpg';
+import sunscreen from '@/assets/products/sunscreenw.jpg';
+import femmewayw from '@/assets/products/femmewayw.jpg';
 import logo from '@/assets/mlway.png';
 
 const HeroSection = () => {
   const products = [
-    facialwash,
-    femmeway,
     sunscreen,
-    beeway
+    facialwash,
+    beeway,
+    femmedeo,
+    femmewayw
 
   ];
 
@@ -29,7 +31,7 @@ const HeroSection = () => {
             Perhatian!! Untuk SIAPAPUN yang ingin mulai berbinis dari rumah, Info Terbaik Ini Perlu Anda Ketahui:
           </p>
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-8">
-            Dapatkan Potensi Penghasilan Hingga Puluhan Juta Rupiah per bulan Bisa Dikerjakan dari Rumah/ Full/ Part Time
+            Dapatkan Penghasilan Hingga Puluhan Juta Rupiah per bulan Bisa Dikerjakan dari Rumah/ Full/ Part Time
           </h1>
         </div>
         <div className="max-w-6xl mx-auto bg-white/10 backdrop-blur-sm rounded-2xl">
