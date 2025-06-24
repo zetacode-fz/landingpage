@@ -6,6 +6,7 @@ import AdvantagesSection from './components/AdvantagesSection'
 import ChatTestimonialsSection from './components/ChatTestimonialsSection'
 import PricingSection from './components/PricingSection'
 import CallToAction from './components/CallToAction'
+import VideoSection from './components/VideoSection'
 import { useSubdomain } from './context/SubdomainContext'
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <BenefitSection />
         <AdvantagesSection />
         <ChatTestimonialsSection />
+        <VideoSection />
         <PricingSection />
         <CallToAction />
       </main>

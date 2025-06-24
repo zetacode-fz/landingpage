@@ -1,14 +1,14 @@
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import wchat0 from '@/assets/socialproof/photo_2025-02-18_12-06-50.jpg';
-import wchat1 from '@/assets/socialproof/photo_2025-02-18_12-07-01.jpg';
-import wchat2 from '@/assets/socialproof/photo_2025-02-18_12-07-09.jpg';
-import wchat3 from '@/assets/socialproof/photo_2025-02-18_12-07-17.jpg';
-import wchat4 from '@/assets/socialproof/photo_2025-02-18_12-07-20.jpg';
-import wchat5 from '@/assets/socialproof/photo_2025-02-18_12-07-20.jpg';
-import wchat6 from '@/assets/socialproof/photo_2025-02-18_12-14-56.jpg';
-import wchat7 from '@/assets/socialproof/photo_2025-02-18_12-15-05.jpg';
+import wchat0 from '@/assets/socialproof/photo_2025-05-13_15-00-30.jpg';
+import wchat1 from '@/assets/socialproof/photo_2025-05-13_15-00-33.jpg';
+import wchat2 from '@/assets/socialproof/photo_2025-05-13_15-00-35.jpg';
+import wchat3 from '@/assets/socialproof/photo_2025-05-13_15-00-40.jpg';
+import wchat4 from '@/assets/socialproof/photo_2025-05-13_14-37-10.jpg';
+import wchat5 from '@/assets/socialproof/photo_2025-05-13_14-37-07.jpg';
+import wchat6 from '@/assets/socialproof/photo_2025-05-13_14-37-06.jpg';
+import wchat7 from '@/assets/socialproof/photo_2025-05-13_14-37-04.jpg';
 
 const ChatTestimonialsSection = () => {
   const chatTestimonials = [
@@ -23,6 +23,7 @@ const ChatTestimonialsSection = () => {
   ];
 
   return (
+    <div>
     <section className="py-16 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -76,6 +77,8 @@ const ChatTestimonialsSection = () => {
         </div>
       </div>
     </section>
+
+    </div>
   );
 };
 

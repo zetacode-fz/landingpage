@@ -95,23 +95,48 @@ export const SubdomainProvider = ({ children }: { children: ReactNode }) => {
 
     loadSubdomainData();
   }, []);
+  // const redirectToMainDomain = () => {
+  //   const hostname = window.location.hostname; // Contoh: "millionaire.mlway.online"
+  //   const port = window.location.port ? `:${window.location.port}` : ""; // Tambahkan port jika ada
+  //   const parts = hostname.split(".");
+
+  //   let mainDomain;
+
+  //   if (hostname.endsWith(".localhost")) {
+  //     // Jika domain lokal, root domain tetap "localhost"
+  //     mainDomain = "localhost";
+  //   } else {
+  //     // Jika hostname memiliki lebih dari 2 bagian, ambil 2 bagian terakhir sebagai root domain
+  //     mainDomain = parts.length > 2 ? parts.slice(-2).join(".") : hostname;
+  //   }
+
+  //   window.location.href = `${window.location.protocol}//${mainDomain}${port}`;
+  // };
   const redirectToMainDomain = () => {
-    const hostname = window.location.hostname; // Contoh: "millionaire.mlway.online"
-    const port = window.location.port ? `:${window.location.port}` : ""; // Tambahkan port jika ada
+    const hostname = window.location.hostname;
+    const port = window.location.port ? `:${window.location.port}` : "";
+  
     const parts = hostname.split(".");
-
+  
     let mainDomain;
-
-    if (hostname.endsWith(".localhost")) {
-      // Jika domain lokal, root domain tetap "localhost"
+  
+    // Khusus untuk domain .biz.id
+    if (hostname.endsWith(".biz.id")) {
+      if (parts.length >= 3) {
+        // Ambil domain utama misalnya sub.mlway.biz.id => mlway.biz.id
+        mainDomain = parts.slice(-3).join(".");
+      } else {
+        mainDomain = hostname;
+      }
+    } else if (hostname.endsWith(".localhost")) {
       mainDomain = "localhost";
     } else {
-      // Jika hostname memiliki lebih dari 2 bagian, ambil 2 bagian terakhir sebagai root domain
       mainDomain = parts.length > 2 ? parts.slice(-2).join(".") : hostname;
     }
-
+  
     window.location.href = `${window.location.protocol}//${mainDomain}${port}`;
   };
+  
 
 
   return (

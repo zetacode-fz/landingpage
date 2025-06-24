@@ -1,11 +1,11 @@
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import femmedeo from '@/assets/products/femmedeo.jpg';
+import femmedeo from '@/assets/products/femmedeo1.jpg';
 import beeway from '@/assets/products/rashcreamw.jpg';
 import facialwash from '@/assets/products/facialwashw.jpg';
-import sunscreen from '@/assets/products/sunscreenw.jpg';
-import femmewayw from '@/assets/products/femmewayw.jpg';
+import sunscreen from '@/assets/products/sunscreen1.jpg';
+import femmewayw from '@/assets/products/femmemoiz.jpg';
 import logo from '@/assets/mlway.png';
 
 const HeroSection = () => {
@@ -42,6 +42,7 @@ const HeroSection = () => {
             infiniteLoop={true}
             autoPlay={true}
             interval={5000}
+            className="max-h-screen w-auto"
             renderArrowPrev={(clickHandler, hasPrev) => {
               return hasPrev && (
                 <button
@@ -66,8 +67,8 @@ const HeroSection = () => {
             }}
           >
             {products.map((url, index) => (
-              <div key={index} className="p-2">
-                <img src={url} alt={`Product ${index + 1}`} className="rounded-lg shadow-2xl" />
+              <div key={index} className="p-2 max-h-screen w-auto overflow-hidden">
+                <img src={url} alt={`Product ${index + 1}`} className="rounded-lg shadow-2xl max-h-screen w-auto object-contain" />
               </div>
             ))}
           </Carousel>
